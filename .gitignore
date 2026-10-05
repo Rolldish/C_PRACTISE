@@ -1,0 +1,28 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+out/
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.idb
+*.tlog
+*.log
+*.recipe
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+

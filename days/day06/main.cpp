@@ -17,7 +17,7 @@ void showMenu();
 int  findDeviceIndex(const Device devices[], int count, int id);
 void searchDevice(const Device devices[], int count);
 void modifyDevice(Device devices[], int count);
-
+void deleteDevice(Device devices[], int& count);
 
 const int MAX_DEVICES = 100;
 int main()
@@ -55,6 +55,9 @@ int main()
 			break;
 		case 4:
 			modifyDevice(devices, deviceCount);
+			break;
+		case 5:
+			deleteDevice(devices, deviceCount);
 			break;
 		default:
 			cout << "Invalid choice." << endl;
@@ -143,6 +146,7 @@ void showMenu()
 	cout << "2. Show all devices\n";
 	cout << "3. Search device by ID\n";
 	cout << "4. Modify device\n";
+	cout << "5. Delete device\n";
 	cout << "0. Exit\n";
 	cout << "Please select: ";
 }
@@ -225,4 +229,25 @@ void modifyDevice(Device devices[], int count)
 	cin >> devices[index].price;// TODO：修改找到的设备价格
 
 	cout << "Device modified successfully." << endl;
+}
+
+void deleteDevice(Device devices[], int& count)
+{
+	int id;
+	cout << "Enter device ID to delete: ";
+	cin >> id;
+	int index = findDeviceIndex(devices, count, id);
+	if (index == -1)
+	{
+		cout << "Device not found." << endl;
+		return;
+	}
+	for (int i = index;i < count - 1;i++)
+	{
+		devices[i] = devices[i + 1];
+	}
+	count--;
+	cout << "Device deleted successfully." << endl;
+
+
 }

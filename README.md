@@ -4,8 +4,8 @@
 
 ## 当前进度
 
-- 已整理并上传第 1～6 天代码。
-- 第 1～6 天已完成对应练习。
+- 已整理并上传第 1～7 天代码。
+- 第 1～7 天已完成对应练习。
 - 完整安排见 [20_DAY_PLAN.md](20_DAY_PLAN.md)。
 - 原始阶段文档保留在 [FIRST_STAGE_PLAN.md](FIRST_STAGE_PLAN.md) 和 [SECOND_STAGE_PLAN.md](SECOND_STAGE_PLAN.md)。
 
@@ -18,7 +18,8 @@ days/
 ├── day03/  struct、固定数组与引用
 ├── day04/  按设备编号查询
 ├── day05/  修改设备与拒绝重复编号
-└── day06/  删除设备
+├── day06/  删除设备
+└── day07/  可靠的菜单和数据输入
 ```
 
 每个目录中的 `main.cpp` 均来自本地学习工程。为便于 GitHub 正确显示中文，只将原来的 GBK 编码转换为 UTF-8，未修改程序逻辑。
